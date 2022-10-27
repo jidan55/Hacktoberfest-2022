@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <main class="container">
+        <div class="left">
+            <h1 class="margin-bottom">Checkout</h1>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="input">
+                <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="enter your email" required>
+            </div>
+            <div class="input">
+                <label for="number">Phone</label>
+            <input type="text" name="" id="number" placeholder="enter your phone" required>
+            </div>
+            
+        </div>
+        <div class="shipping-info">
+            <h3>Shipping address</h3>
+            <div class="input">
+                <label for="name">Full name</label>
+            <input type="text" name="" id="name" placeholder="enter your name" required>
+            </div>
+
+            <div class="input">
+                <label for="address">Address</label>
+            <input type="text" name="" id="address" placeholder="enter your address" required>
+            </div>
+            
+            <div class="input">
+                <label for="city">City</label>
+            <input type="text" name="" id="city" placeholder="city" required>
+            </div>
+
+            <div class="row-flex">
+                <div class="input">
+               
+                    <label for="country">Country</label>
+
+                    <form method="country" style="margin-right: 5px;">
+                        
+                        <select> 
+                           <option value="">Your country</option>
+                           <option value="1">Bangladesh</option>
+                           <option value="2">India</option>
+                           <option value="3">China</option>
+                           <option value="4">London</option>
+                           <option value="5">Bhutan</option>
+                           <option value="6">Nepal</option>
+                           <option value="7">America</option>
+                           <option value="8">Japan</option>
+                        </select>
+                        
+                    </form>
+                </div>
+                <div class="input">
+                    <label for="postal">Postal code</label>
+                <input type="text" name="" id="postal" placeholder="postal code" required>
+                </div>
+            </div>
+            <input type="checkbox" name="" id="check">
+            <Label for="check">Save data for next use</Label>
+        </div>
+        <div class="button">
+            <button id="continue">Continue</button>
+        </div>
+        </div>
+
+        <div class="right">
+            <div class="photo1">
+                <img src="./photo1.png" alt="" srcset="" class="image1">
+                <div class="text cart"><h3>Vintage Backbag</h3>
+                    <h4 style="margin-right: 10px; color: darkorange;">$54.99</h4>
+                    <p><small> $94.99</small></p>
+                    <div class="count">
+                        <button id="minus1" class="button1">-</button>
+                        <div><span id="count1">1</span></div>
+                        <button id="plus1" class="button1">+</button>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div class="photo2">
+                <img src="./photo2.png" alt="" srcset="" class="image2">
+                <div class="text cart"><h3>VLevi shoes</h3>
+                    <h4 style="margin-right: 10px; color: darkorange;">$44.99</h4>
+                    <p><small> $74.99</small></p>
+                    <div class="count">
+                        <button id="minus2" class="button1">-</button>
+                        <div><span id="count2">1</span></div>
+                        <button id="plus2" class="button1">+</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="total-price">
+                <h4>Shipping</h4>
+                <h4>$ 40.00</h4>
+            </div>
+            <hr>
+            <div class="total-price">
+                <h4>SubTotal (Vat included)</h4>
+                <h4>$ 380.00</h4>
+            </div>
+            
+        </div>
+        
+        
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
