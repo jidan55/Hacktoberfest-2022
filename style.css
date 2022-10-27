@@ -1,0 +1,147 @@
+.container{
+    padding:0 10vw;
+    display: grid;
+    grid-template-columns:8fr 4fr;
+    grid-gap: 5vw;
+}
+.margin-bottom{
+    margin-bottom: 3vw;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+input,form >select{
+    padding: 10px 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 199, 199);
+    
+}
+.button{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+button{
+    padding: 10px 20px;
+    background-color: coral;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+}
+select{
+    width: 20vw;
+
+}
+#postal{
+    width: 20vw;
+}
+label{
+    margin-bottom: 5px;
+}
+.row-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right{
+    margin-top: 10%;
+    border-radius: 10px;
+    width: 500px;
+    height: 600px;
+    background-color: rgb(234, 234, 241);
+    display: flex;
+    flex-direction: column;
+    padding:5% 3%;
+   
+}
+.image1{
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.image2{
+    
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+}
+.photo1,.photo2{
+    
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+hr{
+    border: 01px solid rgb(170, 163, 163);
+    width: inherit;
+}
+.text p,h4{
+    display: inline;
+}
+.cart{
+    margin-top: 20px;
+}
+.count{
+    margin-top: 20px;
+    width: 200px;
+    height: 37px;
+    background-color: beige;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+small{
+    text-decoration-line: line-through;
+    text-decoration: line-through;
+}
+.total-price{
+    line-height: 2px;
+    padding: 0 4px;
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width:768px) {
+    .container{
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .right{
+        margin-top: 0;
+        padding-top: -3px;
+
+        width: 80%;
+        height: auto;
+       
+        
+    }
+    .photo1,.photo2{
+        align-items: center;
+    }
+    .image1,.image2{
+        width: 35vw;
+        height: 30vw;
+    }
+    .button1{
+        color: #000;
+    }
+    .cart{
+        margin-top: 0;
+        width: 50%;
+    }
+    .count{
+        width: 100%;
+    }
+    .left{
+        width: 80%;
+    }
+}
